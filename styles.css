@@ -1,19 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: content-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #d74949;
 }
 
-hr {
-  width: 49px;
+.main-container {
+  background: #f3f3f3;
+  max-width: 1110px;
+  height: 90vh;
+  margin-left: 165px;
+  margin-right: 165px;
 }
-h1 {
+
+.h1-container {
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+}
+
+#line-h1 {
+  background: #d9d9d9;
+  width: 49px;
+  height: 2px;
+}
+
+.header h1 {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 300;
@@ -23,10 +39,13 @@ h1 {
   text-decoration-skip-ink: none;
 }
 
-h2 {
-  text-align: right;
-  padding-right: 49px;
-  padding-top: 12px;
+.h2-container {
+  margin-top: 12px;
+  margin-right: 51px;
+}
+
+.h2-container h2 {
+  color: black;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 800;
@@ -35,24 +54,15 @@ h2 {
   text-align: right;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  /* padding: 12px 49px 0px 0px; */
 }
 
-.first-heading {
-  padding-top: 100px;
-  display: flex;
-  align-items: center;
-}
-
-.main-container {
-  max-width: 1110px;
-  background-color: #f3f3f3;
-  height: 90.7vh;
-  margin: auto;
-}
-
-#title {
+.title {
+  margin-top: 7px;
+  text-align: center;
   text-transform: uppercase;
+}
+
+.title p {
   font-family: Roboto;
   font-size: 20px;
   font-weight: 700;
@@ -62,7 +72,7 @@ h2 {
   text-decoration-skip-ink: none;
 }
 
-#title span {
+.title p span {
   color: #d74949;
   font-family: Roboto;
   font-size: 20px;
@@ -73,96 +83,96 @@ h2 {
   text-decoration-skip-ink: none;
 }
 
-.card-container {
-  width: 207px;
+.profile-container {
+  width: 200px;
   height: 328px;
-  padding: 39px 0px 0px 50px;
+  margin-top: 38px;
+  margin-left: 50px;
   position: relative;
 }
 
-.card {
+.card-container {
+  position: absolute;
   width: 200px;
   height: 300px;
-  box-shadow: #d74949;
-  position: absolute;
-  box-shadow: 5px 5px 10px #3a3a3a;
+  box-shadow: 2px 2px 7px 0px black;
   border-radius: 15px;
   overflow: hidden;
 }
-.social {
-  display: flex;
-  justify-content: start;
-  padding: 20px;
-  gap: 5px;
-}
 
-.picture1 {
+.profile-image {
   width: 200px;
-  height: 185px;
-  background-image: url(./images/image\ 1.png);
-}
-.picture {
-  width: 200px;
-  height: 185px;
+  height: 180px;
   background-image: url(https://s3-alpha-sig.figma.com/img/25e0/f7da/ba9bbf242460f04a57196e93d54e0943?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fi0zvrxt~XBvkgRAhNBkcbziCS3AcKaw5vFZaR1~52i18N7~qK3RG3Hvj4FJu3ADL9wKzAEvl0BxEWHPQEebOM2IthK8AUu5DX5WX0zh8KVN2TEWqCple4TLOrtetHXzqt55Xadye8VfbVgHIXnz--Eo1J8aM8-ZdtK8hD~HkGfAP~N8Cu~DxLWjYzz1~PnbaRJc1AwMo0voMAgSfZt08ZuvfQjxbBTjdrNsBLZgDqiiTv7OO8wPCOfH8F~gt9gweAgTH84DAMv4v~Smap5G-Kapz-SNuOqeYqkikwSIOjvoarZkoDZ5QB6qXiQyvRk7uvguqwRHe~~g5W2PnCWsVw__);
   background-size: contain;
 }
-.linkedin {
-  width: 18px;
-  height: 18px;
-  background-image: url(./images/linkedin.png);
-}
-.whatshapp {
-  width: 18px;
-  height: 18px;
-  background-image: url(./images/whatsapp.png);
-}
 
-p.name {
-  font-size: 14px;
-  padding: 20px 0px 0px 20px;
-}
-
-p.title {
-  font-size: 14px;
-  padding: 3px 0px 0px 20px;
-  color: #3a3a3a;
-}
-
-.circle {
-  height: 54px;
-  width: 54px;
-  border-radius: 50%;
-  background-color: lightgray;
-  margin-left: auto;
-  margin-top: calc(328px - 54px);
-}
-
-.circle-container {
-  width: 207px;
-  height: 328px;
-  position: absolute;
-}
-
-.footer {
-  width: 1440px;
-  margin: auto;
-  height: 9.3vh;
-  top: 615px;
-  gap: 0px;
-  opacity: 0px;
-  background: #3a3a3a;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer p {
-  color: #ffffff;
+.name p {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 700;
   line-height: 16.41px;
+  letter-spacing: 0.04em;
+  text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.job-title p {
+  margin-top: 3px;
+  margin-left: 20px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16.41px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.social {
+  display: flex;
+  margin-top: 10px;
+}
+
+.linkedin {
+  margin-left: 20px;
+  width: 18px;
+  height: 18px;
+  background-image: url(https://s3-alpha-sig.figma.com/img/5b5a/8b93/a5fbb42e501044357406a9b5bde9dcb1?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=V3XeUJOIxaR4hWIk1pITeghNtO4HWYUiu4ifXbIwAjzQq~GSwqSrv5qxsPufcLIMxk~3fDqskkagt-AxlbdaRNnu8I5zROJbv7iam5fc0VDpEVl6DX7c7PsMGxETnPqb3EiJcYivaUaeAky5LC2tp3~l3rAJ--k8OB5WjmORcCsuHYhxesP-vGhz3gmD5iaBwMhnRpNeNDh7OIobzHr~A5GgPI-uvgAmyV-6Kun8Cjxb2rOCy1sC5l7y5waqJnu6kWK~tFx5mvMtG~sMyPx3X023rx2FTepOUEjvvJVW-XjKSRdTZ-y~1dzQBjhWcrAyAlQHu4~ncYjGtSqIBOLK7g__);
+  background-size: contain;
+}
+
+.whatsap {
+  margin-left: 8px;
+  width: 18px;
+  height: 18px;
+  background-image: url(https://s3-alpha-sig.figma.com/img/4faf/d84c/293b35a8b571a0a44098f53606a42816?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ljUxnuZIuBV-ZnFyUZpnce9yKARwBdN3xnjt4J~9ULwWImgFLqHLhcqKvXTfU9BZTT~sp8nEqeQeAaq8HNyQ2G-ZGOwp8xiOtyXfqZ8pwEkXOtYflH0CuWkhBEVKwu9U8Yi0ql3Iz~vCJq7A4Cr3mKeK~ocv3SNSXupyJe~AvPk8YFE2oqFbb6ljp1SsxtdwVNXVs~SyVThJze7B72h3OmjvK4vkSKVMyIa4wT4BZ-IkUtH6ybtiQ4-TJitVVX~KMd1hcBudtFKX-snBay2sh-nmwlclcwaXtwaCrWdcOXOJVgdm8-RF4FRpJKRrH2lTBuIYlJAXnB0-AH3gfBcIWw__);
+  background-size: contain;
+}
+
+.circle {
+  /* background: #d9d9d9; */
+  position: absolute;
+  background-color: #d9d9d9;
+  height: 54px;
+  width: 54px;
+  border-radius: 50%;
+  margin-left: 153px;
+  margin-top: 274px;
+}
+
+.footer-container {
+  background: #3a3a3a;
+  width: 100vw;
+  height: 10vh;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  margin: auto;
 }
