@@ -171,8 +171,5 @@ body {
   color: whitesmoke;
   display: flex;
   align-items: center;
-}
-
-.footer {
-  margin: auto;
+  justify-content: center;
 }
